@@ -1,0 +1,19 @@
+{
+    "name": "shiel/course-pdo",
+    "description": "Curso aprendendo PDO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alexandre Ferreira",
+            "email": "shieldforce2@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+      "psr-4":{
+        "App\\": "app/"
+      }
+    }
+}
