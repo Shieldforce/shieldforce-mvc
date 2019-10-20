@@ -2,6 +2,12 @@
 
     namespace App\Config;
 
+    /**
+     * Descrição para Database
+     *
+     * @autor Alexandre Ferreira
+     *
+     */
     class Database
     {
         public function conn()
