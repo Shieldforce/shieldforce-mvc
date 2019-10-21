@@ -14,7 +14,6 @@
 
         public function getRoute()
         {
-
             $url = $this->parserURL();
             $indice = $url[0];
             //--------------------------------------
@@ -31,12 +30,12 @@
                 }
                 else
                 {
-                    return "HomeController";
+                    return "Home\HomeController";
                 }
             }
             else
             {
-                return "Error404Controller";
+                return "Errors\Error404Controller";
             }
         }
 

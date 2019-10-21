@@ -10,10 +10,8 @@
         {
             return
                 [
-                    ""                          => "HomeController",
-                    "home"                      => "HomeController",
-                    "sitemap"                   => "SitemapController",
-                    "produtos"                  => "ProductsController",
+                    ""                          => "Home\HomeController",
+                    "home"                      => "Home\HomeController",
                 ];
         }
     }

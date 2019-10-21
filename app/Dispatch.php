@@ -42,11 +42,15 @@
         //Method Add Method
         private function addMethod()
         {
-            if(method_exists($this->obj,$this->parserURL()[1]))
+            if(method_exists($this->obj, $this->parserURL()[1]))
             {
                 $this->setMethod("{$this->parserURL()[1]}");
                 self::addParams();
                 call_user_func_array([$this->obj, $this->getMethod()], $this->getParams());
+            }
+            else
+            {
+                call_user_func_array(["App\\Controllers\\Errors\\Error404Controller", "notMethod"], $this->getParams());
             }
         }
 
