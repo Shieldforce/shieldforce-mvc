@@ -2,7 +2,7 @@
 
     namespace SF\Traits;
 
-    class TraitURLParser
+    trait TraitURLParser
     {
         public function parserURL()
         {

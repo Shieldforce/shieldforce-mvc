@@ -16,7 +16,7 @@
     $startClasses = new \App\Starting\Application();
 
     echo "<pre>";
-        print_r(GET_CONTROLLER);
+        print_r('');
     echo "</pre>";
 
 

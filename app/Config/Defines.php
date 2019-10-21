@@ -1,6 +1,7 @@
 <?php
 
     namespace App\Config;
+    use SF\Classes\Routes;
 
     /**
      * Descrição para Defines
@@ -14,6 +15,8 @@
         {
             try
             {
+                $getURL = new Routes();
+
                 $return =
                     [
                         //Config Start
@@ -46,6 +49,9 @@
                         define("DIR_ASSET"           , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/"),
                         define("DIR_PANEL"           , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/PanelP"),
                         define("DIR_HOME"            , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/HomeP"),
+
+                        //System Routes
+                        define("GET_CONTROLLER"      , $getURL->getRoute())
 
                         //---------
                     ];

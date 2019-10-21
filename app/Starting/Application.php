@@ -4,7 +4,7 @@
 
     use App\Config\Database;
     use App\Config\Defines;
-    use SF\Classes\Routes;
+    use App\Dispatch;
 
     /**
      * Descrição para Classes
@@ -35,7 +35,7 @@
             //Start Session
             \SF\Services\Sessions\StartSession::sec_session_start();
 
-            $getURL = new Routes();
-            define("GET_CONTROLLER", $getURL->getRoute());
+            $dispatch = new Dispatch();
+
         }
     }

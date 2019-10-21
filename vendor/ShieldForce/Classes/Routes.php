@@ -8,12 +8,14 @@
 
     class Routes
     {
+        use TraitURLParser;
+
         private $route;
 
         public function getRoute()
         {
-            $traitURLParser = new TraitURLParser();
-            $url = $traitURLParser->parserURL();
+
+            $url = $this->parserURL();
             $indice = $url[0];
             //--------------------------------------
             $web = new Web();
@@ -29,7 +31,7 @@
                 }
                 else
                 {
-                    return "Error404Controller";
+                    return "HomeController";
                 }
             }
             else
