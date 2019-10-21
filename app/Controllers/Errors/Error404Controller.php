@@ -3,36 +3,13 @@
 
     namespace App\Controllers\Errors;
 
+    use App\Controllers\Controller;
     use SF\Classes\Render;
 
-    class Error404Controller extends Render
+    class Error404Controller extends Render implements Controller
     {
-        public function __construct()
+        public function index()
         {
-            $return =
-                [
-                    'code'     =>404,
-                    'mgs'      =>'Controller not Found',
-                    'line'     =>19,
-                    'data'     =>null,
-                ];
-            echo "<pre style='background-color: black;color: red;padding: 20px;'>";
-            print_r($return);
-            echo "</pre>";
+            return $this->view("Errors.viewNotFound",['title'=>'View Not Found']);
         }
-
-        public function notMethod()
-        {
-            $return =
-                [
-                    'code'     =>404,
-                    'mgs'      =>'Method not Found',
-                    'line'     =>20,
-                    'data'     =>null,
-                ];
-            echo "<pre style='background-color: black;color: red;padding: 20px;'>";
-            print_r($return);
-            echo "</pre>";
-        }
-
     }

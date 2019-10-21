@@ -8,19 +8,22 @@
 
     class HomeController extends Render implements Controller
     {
-
-        public function __construct()
-        {
-            return $this->view("Home.index",[]);
-        }
-
         public function index()
         {
             return $this->view("Home.index",
                 [
-                    'author'               =>'Alexandre Ferreira',
-                    'description'          =>'Sistema Web'
+                    'title'=>'Página Principal'
                 ]
             );
         }
+
+        public function show()
+        {
+            return $this->view("Home.show",
+                [
+                    'title'=>'Amostra única'
+                ]
+            );
+        }
+
     }

@@ -19,39 +19,44 @@
 
                 $return =
                     [
+                        //Information author System
+                        define("AUTHOR_SYSTEM"                    , "Alexandre Ferreira"),
+                        define("DESCRIPTION_SYSTEM"               , "Sistemas Web"),
+                        define("KEYWORDS_SYSTEM"                  , "Sistemas Web"),
+
                         //Config Start
-                        define("FOLDER_INTERNAL"    , "shieldforce-framework"),
-                        define("DS"                 , DIRECTORY_SEPARATOR),
-                        define("ROOT_PATH"          , substr($_SERVER['DOCUMENT_ROOT'], -1)=='/' ? str_replace(["/public"],[""], $_SERVER['DOCUMENT_ROOT']) : str_replace(["/public"],[""], $_SERVER['DOCUMENT_ROOT'])."/"),
-                        define("PUBLIC_PATH"        , substr($_SERVER['DOCUMENT_ROOT'], -1)=='/' ? $_SERVER['DOCUMENT_ROOT'] : $_SERVER['DOCUMENT_ROOT']."/"),
-                        define("ROOT_URL"           , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/"),
-                        define("APP_PATH"           , "app"),
-                        define("APP_TIMEZONE"       , $this->timezones('RJ')),
-                        define("URL_PARAMS"         , isset($_GET['URL']) ? $_GET['URL'] : ''),
+                        define("FOLDER_INTERNAL"                  , "shieldforce-framework"),
+                        define("DS"                               , DIRECTORY_SEPARATOR),
+                        define("ROOT_PATH"                        , substr($_SERVER['DOCUMENT_ROOT'], -1)=='/' ? str_replace(["/public"],[""], $_SERVER['DOCUMENT_ROOT']) : str_replace(["/public"],[""], $_SERVER['DOCUMENT_ROOT'])."/"),
+                        define("PUBLIC_PATH"                      , substr($_SERVER['DOCUMENT_ROOT'], -1)=='/' ? $_SERVER['DOCUMENT_ROOT'] : $_SERVER['DOCUMENT_ROOT']."/"),
+                        define("ROOT_URL"                         , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/"),
+                        define("APP_PATH"                         , "app"),
+                        define("APP_TIMEZONE"                     , $this->timezones('RJ')),
+                        define("URL_PARAMS"                       , isset($_GET['URL']) ? $_GET['URL'] : ''),
 
                         //Connection DB
-                        define("HOST"               , "localhost"),
-                        define("DB"                 , "course_pdo"),
-                        define("USER"               , "root"),
-                        define("PASS"               , ""),
-                        define("CHARSET"            , "utf8"),
-                        define("DRIVER"             , "mysql"),
+                        define("HOST"                             , "localhost"),
+                        define("DB"                               , "course_pdo"),
+                        define("USER"                             , "root"),
+                        define("PASS"                             , ""),
+                        define("CHARSET"                          , "utf8"),
+                        define("DRIVER"                           , "mysql"),
                         //---------
 
                         //App Infor
-                        define("APP_NAME"           , "Framework-ShieldForce"),
-                        define("APP_HOST"           , "http://course-pdo"),
-                        define("APP_MODE"           , "dev"), // dev = development | prod = production
-                        define("APP_HASH"           , "3502794511571543148"),
+                        define("APP_NAME"                         , "Framework-ShieldForce"),
+                        define("APP_HOST"                         , "http://course-pdo"),
+                        define("APP_MODE"                         , "dev"), // dev = development | prod = production
+                        define("APP_HASH"                         , "3502794511571543148"),
                         //---------
 
                         //Directories Asset's
-                        define("DIR_ASSET"           , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/"),
-                        define("DIR_PANEL"           , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/PanelP"),
-                        define("DIR_HOME"            , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/HomeP"),
+                        define("DIR_ASSET"                        , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/"),
+                        define("DIR_PANEL"                        , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/PanelP"),
+                        define("DIR_HOME"                         , $_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/public/HomeP"),
 
                         //System Routes
-                        define("GET_CONTROLLER"      , $getURL->getRoute())
+                        define("GET_CONTROLLER"                   , $getURL->getRoute())
 
                         //---------
                     ];
@@ -133,3 +138,6 @@
            return 'America/Sao_Paulo';
         }
     }
+
+
+
