@@ -6,6 +6,12 @@
     use App\Routes\Web;
     use SF\Traits\TraitURLParser;
 
+    /**
+     * Descrição para Routes
+     *
+     * @autor Alexandre Ferreira
+     *
+     */
     class Routes
     {
         use TraitURLParser;

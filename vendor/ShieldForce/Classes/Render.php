@@ -4,6 +4,12 @@
 
     use SF\Traits\Compact;
 
+    /**
+     * Descrição para Render
+     *
+     * @autor Alexandre Ferreira
+     *
+     */
     class Render
     {
         use Compact;

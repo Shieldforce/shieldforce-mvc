@@ -5,6 +5,12 @@
 
     use SF\Classes\Routes;
 
+    /**
+     * Descrição para Dispatch
+     *
+     * @autor Alexandre Ferreira
+     *
+     */
     class Dispatch extends Routes
     {
 

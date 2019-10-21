@@ -3,7 +3,12 @@
 
     namespace App\Routes;
 
-
+    /**
+     * Descrição para Web
+     *
+     * @autor Alexandre Ferreira
+     *
+     */
     class Web
     {
         public function setRoutes()

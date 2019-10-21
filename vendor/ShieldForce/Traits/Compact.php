@@ -3,6 +3,12 @@
 
     namespace SF\Traits;
 
+    /**
+     * Descrição para Compact
+     *
+     * @autor Alexandre Ferreira
+     *
+     */
     trait Compact
     {
         protected $compact = [];

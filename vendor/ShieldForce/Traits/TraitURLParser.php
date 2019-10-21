@@ -2,6 +2,12 @@
 
     namespace SF\Traits;
 
+    /**
+     * Descrição para TraitURLParser
+     *
+     * @autor Alexandre Ferreira
+     *
+     */
     trait TraitURLParser
     {
         public function parserURL()

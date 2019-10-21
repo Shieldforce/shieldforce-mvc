@@ -6,6 +6,12 @@
     use App\Controllers\Controller;
     use SF\Classes\Render;
 
+    /**
+     * Descrição para Error404Controller
+     *
+     * @autor Alexandre Ferreira
+     *
+     */
     class Error404Controller extends Render implements Controller
     {
         public function index()
