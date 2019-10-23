@@ -36,7 +36,7 @@
 
                         //Connection DB
                         define("HOST"                             , "localhost"),
-                        define("DB"                               , "course_pdo"),
+                        define("DB"                               , "shieldforce_framework"),
                         define("USER"                             , "root"),
                         define("PASS"                             , ""),
                         define("CHARSET"                          , "utf8"),

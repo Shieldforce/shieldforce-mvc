@@ -15,12 +15,14 @@
             try
             {
                 $return = new \PDO("". DRIVER .":hostname=". HOST .";dbname=". DB ."", "". USER ."", "". PASS ."");
+                $return->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_WARNING );
             }
             catch (\PDOException $e)
             {
                 $return =
                     [
                         'code'     =>$e->getCode(),
+                        'status'   =>'error',
                         'mgs'      =>$e->getMessage(),
                         'line'     =>$e->getLine(),
                         'data'     =>null,
